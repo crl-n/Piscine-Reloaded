@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/28 20:25:46 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/28 21:16:06 by cnysten          ###   ########.fr       */
+/*   Created: 2021/10/28 20:30:47 by cnysten           #+#    #+#             */
+/*   Updated: 2021/10/28 20:36:15 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
-{
-	int	i;
+#include <stdio.h>
 
-	i = 0;
-	while (s1[i] && s2[i])
-	{
-		if (s1[i] != s2[i])
-			return ((int) s1[i] - (int) s2[i]);
-		i++;
-	}
+int ft_strcmp(char *s1, char *s2);
+
+int	main(void)
+{
+	char s1[] = "Hello.";
+	char s2[] = "Hallo.";
+
+	printf("%d\n", ft_strcmp(&s1, &s2));
 	return (0);
 }
