@@ -6,7 +6,7 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 21:01:01 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/29 10:50:08 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:56:35 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ void	ft_print(int argc, char **argv)
 
 	i = 1;
 	while (i < argc)
+	{
 		ft_putstr(argv[i++]);
+		ft_putchar('\n');
+	}
 }
 
 void	ft_print_sorted(int argc, char **argv)
