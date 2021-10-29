@@ -6,7 +6,7 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 20:25:46 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/28 21:16:06 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/29 09:48:37 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_strcmp(char *s1, char *s2)
 	while (s1[i] && s2[i])
 	{
 		if (s1[i] != s2[i])
-			return ((int) s1[i] - (int) s2[i]);
+			return (s1[i] - s2[i]);
 		i++;
 	}
 	return (0);
