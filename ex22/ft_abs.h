@@ -6,11 +6,11 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 13:02:40 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/29 13:11:15 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/29 17:02:37 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef define FT_ABS_H
+#ifndef FT_ABS_H
 # define FT_ABS_H
 # define ABS(value)	((value < 0)?(-value):(value))
 #endif
