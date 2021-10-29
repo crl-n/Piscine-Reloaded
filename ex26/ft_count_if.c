@@ -6,15 +6,17 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:29:25 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/29 14:37:03 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/29 17:05:24 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_count_if(char **tab, int(*f)(char*))
 {
 	int	count;
+	int	i;
 
-	coutn = 0;
+	count = 0;
+	i = 0;
 	while (*tab != 0)
 	{
 		if (f(*tab) == 1)
