@@ -6,21 +6,23 @@
 #    By: cnysten <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/29 14:40:37 by cnysten           #+#    #+#              #
-#    Updated: 2021/10/29 14:47:03 by cnysten          ###   ########.fr        #
+#    Updated: 2021/10/29 15:59:10 by cnysten          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = ft_display_file
 
-SRCS = ft_display_file.c
+SRCS = ft_display_file.c ft_putstr.c ft_putchar.c
 
 all: $(NAME)
-	gcc -Wall -Werror -Wextra -o $(NAME) $(SRCS)
+
+$(NAME):
+	gcc -Wall -Wextra -Werror $(SRCS) -o $(NAME)
 
 clean:
 
 fclean: clean
-	/bin/rm/ ft_display_file
+	/bin/rm ft_display_file
 
 re: fclean all
 
