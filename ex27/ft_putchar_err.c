@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_err.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/28 13:49:58 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/30 12:21:17 by cnysten          ###   ########.fr       */
+/*   Created: 2021/10/30 12:23:37 by cnysten           #+#    #+#             */
+/*   Updated: 2021/10/30 12:28:07 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
 
-void	ft_putstr(char *str)
+void	ft_putchar_err(char c)
 {
-	while (*str)
-		ft_putchar(*str++);
+	write(2, &c, 1);
 }

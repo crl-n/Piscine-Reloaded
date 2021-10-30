@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_err.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/28 13:49:58 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/30 12:21:17 by cnysten          ###   ########.fr       */
+/*   Created: 2021/10/30 12:24:04 by cnysten           #+#    #+#             */
+/*   Updated: 2021/10/30 12:24:49 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+void	ft_putchar_err(char c);
 
-void	ft_putstr(char *str)
+void	ft_putstr_err(char *str)
 {
 	while (*str)
-		ft_putchar(*str++);
+		ft_putchar_err(*str++);
 }

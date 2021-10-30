@@ -6,14 +6,14 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:47:26 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/30 11:14:35 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/30 12:25:45 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <fcntl.h>
 
-void	ft_putstr(char *str);
+void	ft_putstr_err(char *str);
 
 void	ft_read(int fd)
 {
@@ -39,10 +39,10 @@ int	main(int argc, char **argv)
 	}
 	else if (argc > 2)
 	{
-		ft_putstr("Too many arguments.");
+		ft_putstr_err("Too many arguments.\n");
 		return (0);
 	}
 	else
-		ft_putstr("File name missing.");
+		ft_putstr_err("File name missing.\n");
 	return (0);
 }
