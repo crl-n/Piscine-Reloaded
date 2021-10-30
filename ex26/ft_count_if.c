@@ -6,22 +6,20 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:29:25 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/29 17:05:24 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/30 11:45:35 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_count_if(char **tab, int(*f)(char*))
 {
 	int	count;
-	int	i;
 
 	count = 0;
-	i = 0;
-	while (*tab != 0)
+	while (*tab)
 	{
 		if (f(*tab) == 1)
 			count++;
-		i++;
+		tab++;
 	}
 	return (count);
 }
