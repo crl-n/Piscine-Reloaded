@@ -6,7 +6,7 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:47:26 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/29 17:07:40 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/30 11:14:35 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int	main(int argc, char **argv)
 		ft_putstr("Too many arguments.");
 		return (0);
 	}
-	ft_putstr("File name missing.");
+	else
+		ft_putstr("File name missing.");
 	return (0);
 }
