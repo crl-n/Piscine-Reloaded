@@ -6,7 +6,7 @@
 /*   By: cnysten <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 21:01:01 by cnysten           #+#    #+#             */
-/*   Updated: 2021/10/30 12:04:59 by cnysten          ###   ########.fr       */
+/*   Updated: 2021/10/31 13:55:14 by cnysten          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	ft_print_sorted(int argc, char **argv)
 		j = 1;
 		while (j < argc - i)
 		{
-			if (ft_strcmp(argv[j], argv[j + 1]) > 0)
+			if (ft_strcmp(argv[j], argv[j + 1]) >= 0)
 			{
 				temp = argv[j];
 				argv[j] = argv[j + 1];
